@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.course-title {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(70, 2, 2);
+    padding: 16px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+	background-color: dimgray;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    justify-self: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+main h1 {
+    grid-column: span 2;
+    padding: 16px;
+}
+
+.card {
+    
+    border-radius: 25px;
+    box-shadow: 0 0 0 1px #000000 inset;
+}
+
+.card h2 {
+    background-color: rgb(70, 2, 2);
+    padding: 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.card p, img, a, h3 {
+    padding: 16px;
+}
+
+.card li {
+    list-style-position: inside;
+    padding: 3px;
+    padding-left: 16px;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid h2{
+    grid-column: span 3;
+}
+
+.grid h3 {
+    text-align: center;
+    padding-top: 200px;
+    grid-column: span 2;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.large-pic {
+    grid-row: span 2;
+}
+
+.small-pic {
+    width: 250px;
+}
+
+.large-paragraph {
+    grid-column: span 2;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(70, 2, 2);
+    padding: 16px;
+    color: #fff;
+}
