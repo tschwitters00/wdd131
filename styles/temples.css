@@ -33,6 +33,7 @@ header h1 {
 }
 
 nav {
+    display: flex;
 	background-color: rgb(70, 2, 2);
 }
 .navigation {
@@ -45,7 +46,7 @@ nav {
 	display: none;
 }
 .navigation a {
-	display: flex;
+	display: block;
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
