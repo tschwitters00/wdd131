@@ -3,18 +3,17 @@ const conditions = "Cloudy"
 const wind = 2
 
 function calculateWindChill(temp, wind) {
-    var windChill = (35.74 + (0.6215 * temp))-(35.75 * Math.pow(wind,0.16)) + (0.4275*temp*Math.pow(wind,0.16))
-    windChill = Math.round(windChill);
-    let chill = windChill.toString();
-    return chill + "°F"
+    return Math.round(35.74 + 0.6215*temp - 35.75*wind**0.16 + 0.4275*temp*wind**0.16);
 }
 
-if (temp <= 50 && wind > 3) {
-    var windChill = calculateWindChill(temperature, wind)
+if (temperature <= 50 && wind > 3) {
+    var chill = calculateWindChill(temperature, wind);
+    var windChill = chill.toString();
+    windChill += "°F";
 }
 
 else {
-    let windChill = "N/A"
+    windChill = "N/A";
 }
 
 document.getElementById("temperature").innerHTML = temperature;
