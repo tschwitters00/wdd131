@@ -1,0 +1,45 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #460202;
+    color: #fff;
+}
+
+section {
+    border-style: solid;
+    border-color: #460202;
+    margin: 8px;
+    background-color: #dcdcdc;
+}
+
+section h2, p {
+    padding-left: 8px;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 8px;
+    background-color: #fff;
+    background-clip: content-box;
+    padding: 16px;
+}
+
+footer {
+    text-align: center;
+    background-color: #460202;
+    color: #fff;
+    padding: 8px;
+}
