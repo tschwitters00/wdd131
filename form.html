@@ -23,26 +23,26 @@
             <div>
                 <label for="pname">Product Name</label>
                 <select name="pname" id="pname" required>
-                    <option value=""selected hidden disabled>Select a Product ...</option>
+                    <option value="" selected hidden disabled>Select a Product ...</option>
                 </select>
             </div><div class="left-grid">
-                <label for="stars" class="top-label">Overall Rating</label>
-                <input type="radio" id="onestar" name="stars" required>
+                <legend>Overall Rating</legend>
+                <input type="radio" id="onestar" name="stars" value="onestar" required>
                 <label for="onestar">⭐</label>
-                <input type="radio" id="twostar" name="stars" required>
+                <input type="radio" id="twostar" name="stars" value="twostar" required>
                 <label for="twostar">⭐⭐</label>
-                <input type="radio" id="threestar" name="stars" required>
+                <input type="radio" id="threestar" name="stars" value="threestar" required>
                 <label for="threestar">⭐⭐⭐</label>
-                <input type="radio" id="fourstar" name="stars" required>
+                <input type="radio" id="fourstar" name="stars" value="fourstar" required>
                 <label for="fourstar">⭐⭐⭐⭐</label>
-                <input type="radio" id="fivestar" name="stars" required>
+                <input type="radio" id="fivestar" name="stars" value="fivestar" required>
                 <label for="fivestar">⭐⭐⭐⭐⭐</label>
             </div><div>
                 <label for="date">Date of installation</label>
                 <input type="date" id="date" required>
             </div><div class="left-grid">
-                <label for="feature" class="top-label">Which features did you find useful in the product?</label>
-                <label for="feature" class="top-label">(Check all that apply)</label>
+                <legend>Which features did you find useful in the product?</legend>
+                <legend>(Check all that apply)</legend>
                 <input type="checkbox" id="feature1" name="feature" value="durability">
                 <label for="feature1">Durability</label>
                 <input type="checkbox" id="feature2" name="feature" value="easeofuse">
@@ -53,7 +53,7 @@
                 <label for="feature4">Design</label>
             </div><div>
                 <label for="written-review">Written Review (optional)</label>
-                <input type="textarea" id="written-review" name="written-review">
+                <textarea name="written-review" id="written-review"></textarea>
             </div><div>
                 <label for="user-name">Your Name (optional)</label>
                 <input type="text" id="user-name" name="user-name">
