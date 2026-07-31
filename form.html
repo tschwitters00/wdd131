@@ -26,8 +26,8 @@
                     <option value="" selected hidden disabled>Select a Product ...</option>
                 </select>
             </div>
-            <legend>Overall Rating</legend>
-            <div class="left-grid">
+            <fieldset class="left-grid">
+                <legend>Overall Rating</legend>
                 <input type="radio" id="onestar" name="stars" value="onestar" required>
                 <label for="onestar">⭐</label>
                 <input type="radio" id="twostar" name="stars" value="twostar" required>
@@ -38,14 +38,12 @@
                 <label for="fourstar">⭐⭐⭐⭐</label>
                 <input type="radio" id="fivestar" name="stars" value="fivestar" required>
                 <label for="fivestar">⭐⭐⭐⭐⭐</label>
-            </div><div>
+            </fieldset><div>
                 <label for="date">Date of installation</label>
                 <input type="date" id="date" required>
-            </div>
-            <legend>Which features did you find useful in the product?</legend>
-            <legend>(Check all that apply)</legend>
-            <div class="left-grid">
-                
+            </div><fieldset class="left-grid">
+                <legend>Which features did you find useful in the product?</legend>
+                <p>(Check all that apply)</p>
                 <input type="checkbox" id="feature1" name="feature" value="durability">
                 <label for="feature1">Durability</label>
                 <input type="checkbox" id="feature2" name="feature" value="easeofuse">
@@ -54,7 +52,7 @@
                 <label for="feature3">Performance</label>
                 <input type="checkbox" id="feature4" name="feature" value="design">
                 <label for="feature4">Design</label>
-            </div><div>
+            </fieldset><div>
                 <label for="written-review">Written Review (optional)</label>
                 <textarea name="written-review" id="written-review"></textarea>
             </div><div>

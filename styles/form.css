@@ -16,7 +16,7 @@ form {
     padding: 16px;
 }
 
-div {
+div, fieldset{
     padding: 16px;
 }
 
@@ -30,7 +30,6 @@ label {
 }
 
 legend{
-    padding-left: 16px;
     text-align: center;
 }
 
@@ -57,12 +56,17 @@ main p {
     text-align: center;
 }
 
+fieldset p {
+    font-size: 16px;
+    grid-column: span 2;
+}
+
 @media only screen and (min-width: 40em) {
     form {
         width: 80%;
     }
 
-    legend {
+    legend, fieldset p {
         text-align: left;
     }
 }
