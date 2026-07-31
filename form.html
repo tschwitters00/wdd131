@@ -21,13 +21,13 @@
     <main>
         <form action="review.html" method="get">
             <div>
-                <label for="pname">Product Name</label>
+                <label for="pname">Product Name <Span>*required</Span></label>
                 <select name="pname" id="pname" required>
                     <option value="" selected hidden disabled>Select a Product ...</option>
                 </select>
             </div>
             <fieldset class="left-grid">
-                <legend>Overall Rating</legend>
+                <legend>Overall Rating <Span>*required</Span></legend>
                 <input type="radio" id="onestar" name="stars" value="onestar" required>
                 <label for="onestar">⭐</label>
                 <input type="radio" id="twostar" name="stars" value="twostar" required>
@@ -39,7 +39,7 @@
                 <input type="radio" id="fivestar" name="stars" value="fivestar" required>
                 <label for="fivestar">⭐⭐⭐⭐⭐</label>
             </fieldset><div>
-                <label for="date">Date of installation</label>
+                <label for="date">Date of installation <Span>*required</Span></label>
                 <input type="date" id="date" required>
             </div><fieldset class="left-grid">
                 <legend>Which features did you find useful in the product?</legend>
