@@ -63,7 +63,7 @@ fieldset p {
 
 main span {
     font-size: 14px;
-    color: darkred;
+    color: rgb(139, 0, 0);
 }
 
 @media only screen and (min-width: 40em) {
