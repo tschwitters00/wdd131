@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, product review form page.">
+    <meta name="author" content="Trevor Schwitters">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <div>
+                <label for="pname">Product Name</label>
+                <select name="pname" id="pname" required>
+                    <option value=""selected hidden disabled>Select a Product ...</option>
+                </select>
+            </div><div class="left-grid">
+                <label for="stars" class="top-label">Overall Rating</label>
+                <input type="radio" id="onestar" name="stars" required>
+                <label for="onestar">⭐</label>
+                <input type="radio" id="twostar" name="stars" required>
+                <label for="twostar">⭐⭐</label>
+                <input type="radio" id="threestar" name="stars" required>
+                <label for="threestar">⭐⭐⭐</label>
+                <input type="radio" id="fourstar" name="stars" required>
+                <label for="fourstar">⭐⭐⭐⭐</label>
+                <input type="radio" id="fivestar" name="stars" required>
+                <label for="fivestar">⭐⭐⭐⭐⭐</label>
+            </div><div>
+                <label for="date">Date of installation</label>
+                <input type="date" id="date" required>
+            </div><div class="left-grid">
+                <label for="feature" class="top-label">Which features did you find useful in the product?</label>
+                <label for="feature" class="top-label">(Check all that apply)</label>
+                <input type="checkbox" id="feature1" name="feature" value="durability">
+                <label for="feature1">Durability</label>
+                <input type="checkbox" id="feature2" name="feature" value="easeofuse">
+                <label for="feature2">Ease of Use</label>
+                <input type="checkbox" id="feature3" name="feature" value="performance">
+                <label for="feature3">Performance</label>
+                <input type="checkbox" id="feature4" name="feature" value="design">
+                <label for="feature4">Design</label>
+            </div><div>
+                <label for="written-review">Written Review (optional)</label>
+                <input type="textarea" id="written-review" name="written-review">
+            </div><div>
+                <label for="user-name">Your Name (optional)</label>
+                <input type="text" id="user-name" name="user-name">
+            </div><div>
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>
+            ©<span id="currentyear"></span> ✖ Trevor Schwitters ✖ Texas, USA
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>

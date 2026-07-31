@@ -1,0 +1,60 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    padding: 10px;
+    background-color: #460202;
+    color: #fff;
+    text-align: center;
+}
+
+form {
+    display: block;
+    width: 1fr;
+    justify-self: center;
+    background-color: #dcdcdc;
+    padding: 16px;
+}
+
+div {
+    padding: 16px;
+    padding-bottom: 8px;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+label {
+    padding: 2px;
+}
+
+.top-label{
+    grid-column: span 2;
+    text-align: center;
+}
+
+.left-grid {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    
+}
+
+footer {
+    text-align: center;
+    background-color: #460202;
+    color: #fff;
+    padding: 8px;
+}
+
+h2 {
+    font-size: 128px;
+    text-align: center;
+}
+
+main p {
+    font-size: 64px;
+    text-align: center;
+}
