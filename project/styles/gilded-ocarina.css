@@ -1,0 +1,144 @@
+body {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+    background-color: #460202;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    background-color: #DCDCDC;
+}
+
+nav div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 20px;
+    width: 10rem;
+}
+
+nav a:hover {
+    opacity: 0.5;
+    background-color: #fff;
+}
+
+section {
+    background-color: #DCDCDC;
+    border-radius: 16px;
+    margin: 16px;
+    padding: 16px;
+}
+
+#head-image {
+    margin-top: 16px;
+}
+
+form {
+    display: block;
+    justify-self: center;
+
+}
+
+input {
+    display: block;
+    width: 90%;
+    justify-self: center;
+    margin: 8px;
+    padding: 5px;
+}
+
+img {
+    display: block;
+    justify-self: center;
+    width: 100%;
+    height: auto;
+}
+
+#play-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+    max-width: 700px;
+}
+    
+#play-box img {
+    padding-top: 16px;
+    grid-column: span 2;
+}
+
+#play-box button {
+    padding: 8px;
+    margin: 4px;
+}
+
+#sheet-music{
+    margin: 8px;
+}
+
+#sheet-music img {
+    width: 100%;
+    padding: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #460202;
+    color: #fff;
+    padding: 8px;
+}
+
+@media only screen and (min-width: 40em) {
+    #head-image {
+        display: grid;
+        grid-template-columns: 1.5fr 0.5fr;
+        align-items: center;
+    }
+
+    #head-image p {
+        padding-left: 16px;
+    }
+
+    #head-image h2 {
+        grid-column: span 2;
+    }
+
+    #play-box {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-self: center;
+    max-width: 700px;
+    }
+
+    #play-box img {
+        grid-column: span 7;
+    }
+
+    #play-box button {
+        height: 64px;
+    }
+
+    #sheet-music {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #sheet-music img{
+        width: 98%;
+    }
+}
